@@ -13,7 +13,8 @@ public class ExempleCozi {
 //        Queue<Student> studenti = new PriorityQueue<>(comparatorDupaNota);
 
         Comparator<Student> comparator =
-                (Student x,Student y) -> {
+                (x,y) -> {
+            //cate instructiuni ne dorim
             return y.getNota()-x.getNota();
         };
         Queue<Student> studenti = new PriorityQueue<>((x, y) -> y.getNota()-x.getNota());
